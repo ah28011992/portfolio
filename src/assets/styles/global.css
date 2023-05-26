@@ -1,0 +1,46 @@
+:root {
+--primary-theme-color: #2c001e;
+--primary-theme-color-400: #55003A;
+--primary-theme-color-300:#7E0056;
+--primary-theme-color-300:#A60071;
+
+--secondary-theme-color: #f1efea;
+--secondary-theme-color-dark-600:#DBD5C8;
+--secondary-theme-color-light-400:#FFFFFF;
+
+  
+--primary-text-color:#AEA79F;
+--primary-text-color-400:#C1BBB5;
+--primary-text-color-300:#D3D0CB;
+
+
+--secondary-text-color:#333333;
+--secondary-text-color-400:#474747;
+--secondary-text-color-300:#5C5C5C;
+
+background-color: var(--primary-theme-color);
+
+   --paragraph-font-size: 1.2rem;
+
+  --border: solid 0.1rem var(--dark-color);
+  --light-border: solid 0.1rem var(--light-color); 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%;
+
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+
+}
+

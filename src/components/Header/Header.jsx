@@ -1,8 +1,13 @@
 import React from 'react'
+import NavBar from './Navbar'
+
 
 const Header = () => {
-    return (
-        <div>Header</div>
+    return (<>
+      
+        <NavBar />
+      
+    </>
     )
 }
 
