@@ -1,10 +1,38 @@
-import React from 'react'
-import PresentationNavBar from './PresentationNavBar'
+import React, { useEffect } from "react";
+import PresentationNavBar from "./PresentationNavBar";
+import { useState } from "react";
 
 const ContainerNavBar = () => {
-  return (
-    <PresentationNavBar />
-  )
-}
+  const [toggle, setToggle] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(
+    window.innerWidth
+  );
 
-export default ContainerNavBar
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    return () => {
+      window.addEventListener(
+        "resize",
+        changeWidth
+      );
+    };
+  }, []);
+
+  const toggleMenuFunction = () => {
+    setToggle(!toggle);
+  };
+
+  return (
+    <>
+      <PresentationNavBar
+        toggle={toggle}
+        toggleMenuFunction={toggleMenuFunction}
+        screenWidth={screenWidth}
+      />
+    </>
+  );
+};
+
+export default ContainerNavBar;

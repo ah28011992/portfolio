@@ -1,22 +1,30 @@
-import React from 'react'
-import '../../../assets/styles/global.css'
-import styles from './navbar.module.css'
-import IconMenu from '../../UI/Menu'
+import React from "react";
+import "../../../assets/styles/global.css";
+import styles from "./navbar.module.css";
+import IconMenu from "../../UI/Menu";
 
-const PresentationNavBar = () => {
+const PresentationNavBar = ({
+  toggle,
+  toggleMenuFunction,
+  screenWidth,
+}) => {
   return (
     <nav>
-      <ul className={styles.list}>
-        <li className={styles.items}>Home</li>
-        <li className={styles.items}>About</li>
-        <li className={styles.items}>Projects</li>
-        <li className={styles.items}>Contact</li>
-      </ul>
+      {(toggle || screenWidth > 500) && (
+        <ul className={styles.list}>
+          <li className={styles.items}>Home</li>
+          <li className={styles.items}>About</li>
+          <li className={styles.items}> Projects </li>
+          <li className={styles.items}>Contact </li>
+        </ul>
+      )}
       <div className={styles.menuContainer}>
-        <IconMenu  />
+        <IconMenu
+          toggleMenuFunction={toggleMenuFunction}
+        />
       </div>
-    </nav >
-  )
-}
+    </nav>
+  );
+};
 
-export default PresentationNavBar
+export default PresentationNavBar;

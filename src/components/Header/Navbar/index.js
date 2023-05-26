@@ -1,3 +1,3 @@
 import ContainerNavBar from "./ContainerNavBar";
 
-export default ContainerNavBar
+export default ContainerNavBar;
