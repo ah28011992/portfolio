@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Header from "../../components/Header/Header";
 
 const projects = () => {
-    return (
-        <div>projects</div>
-    )
-}
+  return (
+    <>
+      <Header />
+      <div>projects</div>
+    </>
+  );
+};
 
-export default projects
+export default projects;

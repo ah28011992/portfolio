@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import Header from "../../components/Header/Header";
+import IconMenu from "../../components/UI/Menu";
 const Home = () => {
-    return (
-        <div>home</div>
-    )
-}
+  return (
+    <>
+      <Header />
+      <IconMenu />
+    </>
+  );
+};
 
-export default Home
+export default Home;
