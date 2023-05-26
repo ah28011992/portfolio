@@ -3,11 +3,7 @@ import "../../../assets/styles/global.css";
 import styles from "./navbar.module.css";
 import IconMenu from "../../UI/Menu";
 
-const PresentationNavBar = ({
-  toggle,
-  toggleMenuFunction,
-  screenWidth,
-}) => {
+const PresentationNavBar = ({ toggle, toggleMenuFunction, screenWidth }) => {
   return (
     <nav>
       {(toggle || screenWidth > 500) && (
@@ -19,9 +15,7 @@ const PresentationNavBar = ({
         </ul>
       )}
       <div className={styles.menuContainer}>
-        <IconMenu
-          toggleMenuFunction={toggleMenuFunction}
-        />
+        <IconMenu toggleMenuFunction={toggleMenuFunction} />
       </div>
     </nav>
   );
