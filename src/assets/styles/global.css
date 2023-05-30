@@ -1,46 +1,44 @@
 :root {
---primary-theme-color: #2c001e;
---primary-theme-color-400: #55003A;
---primary-theme-color-300:#7E0056;
---primary-theme-color-300:#A60071;
+  --primary-theme-color: #2c001e;
+  --primary-theme-color-400: #55003a;
+  --primary-theme-color-300: #7e0056;
+  --primary-theme-color-300: #a60071;
 
---secondary-theme-color: #f1efea;
---secondary-theme-color-dark-600:#DBD5C8;
---secondary-theme-color-light-400:#FFFFFF;
+  --secondary-theme-color: #f1efea;
+  --secondary-theme-color-dark-600: #dbd5c8;
+  --secondary-theme-color-light-400: #ffffff;
 
-  
---primary-text-color:#AEA79F;
---primary-text-color-400:#C1BBB5;
---primary-text-color-300:#D3D0CB;
+  --primary-text-color: #aea79f;
+  --primary-text-color-400: #c1bbb5;
+  --primary-text-color-300: #d3d0cb;
 
+  --secondary-text-color: #333333;
+  --secondary-text-color-400: #474747;
+  --secondary-text-color-300: #5c5c5c;
 
---secondary-text-color:#333333;
---secondary-text-color-400:#474747;
---secondary-text-color-300:#5C5C5C;
+  background-color: var(--primary-theme-color);
 
-background-color: var(--primary-theme-color);
-
-   --paragraph-font-size: 1.2rem;
+  --paragraph-font-size: 1.2rem;
 
   --border: solid 0.1rem var(--dark-color);
-  --light-border: solid 0.1rem var(--light-color); 
+  --light-border: solid 0.1rem var(--light-color);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 html {
   font-size: 62.5%;
-
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
-
 }
 
+li a {
+  text-decoration: none;
+}
