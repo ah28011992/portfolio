@@ -1,0 +1,45 @@
+@import "../../../assets/styles/global.css";
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--primary-theme-color);
+  top: 50px;
+  z-index: -2;
+  position: absolute;
+  padding: 100px;
+  /* BORDER LEFT FOR STYLING */
+  /* border-style: solid;
+  border-color: white; */
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  /* BORDER LEFT FOR STYLING */
+  /* border: 2px;
+  border-style: solid;
+  border-color: white; */
+  text-align: center;
+}
+
+.title {
+  color: var(--primary-text-color-300);
+  letter-spacing: 2px;
+  font-size: 4rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--font-medium), sans-serif;
+  font-weight: var(--font-weight-medium);
+}
+
+span {
+  color: var(--primary-accent-color);
+}
