@@ -5,6 +5,7 @@ const projects = () => {
   return (
     <>
       <Header />
+
       <div>projects</div>
     </>
   );
