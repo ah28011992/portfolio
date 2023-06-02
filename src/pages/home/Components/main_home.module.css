@@ -1,25 +1,57 @@
 @import "../../../assets/styles/global.css";
 
 .container {
-  width: 100vw;
+  /*
   bottom: 100px;
   background-color: white;
   display: block;
-  position: absolute;
   top: 50px;
-  margin: 0 auto;
-  padding: 2em;
+  
+  */
+  
+
+  width: 100vw;
+  position: absolute;
+  bottom: 100px;
+  /* background-color: white; */
+  background-color: var(--primary-theme-color);
+  display: block;
+  top: 50px;
+  padding: 8em;
   z-index: -2;
 }
 
 .title_container {
+
   text-align: center;
+  padding: 1em;
+  
 }
 
-.title {
+.title_container h1 {
   color: var(--primary-text-color-300);
-  letter-spacing: 2px;
+  font-size: 3.5rem;
 }
+
+ .quote_container  {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--primary-text-color-300);
+    font-style: italic;
+    padding: 1.2em 0.5em ;
+   
+  }
+
+  .icon_container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+  }
+
+  .icon {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
 
 h1 {
   font-family: var(--font-medium), sans-serif;
@@ -30,13 +62,12 @@ span {
   color: var(--primary-accent-color);
 }
 
-.icon__container {
-}
+
 
 @media screen and (max-width: 400px) {
   .container {
     bottom: 100px;
-    background-color:var(--primary-theme-color) ;
+    background-color: var(--primary-theme-color);
     display: block;
     top: 50px;
     margin: 0 auto;
@@ -52,28 +83,24 @@ span {
   .title_container h1 {
     color: var(--primary-text-color-300);
     font-size: 3.5rem;
-    
   }
 
-  .quote_container  {
+  .quote_container {
     font-size: 1.8rem;
     text-align: center;
     color: var(--primary-text-color-300);
     font-style: italic;
-    padding: 1.2em 0.5em ;
-  
+    padding: 1.2em 0.5em;
+    
   }
 
   .icon_container {
     display: flex;
     justify-content: center;
     padding: 0.5em;
-    
   }
   .icon {
     margin-right: 4px;
     margin-left: 4px;
-    
   }
-
 }
