@@ -1,0 +1,12 @@
+@import url("/src/assets/styles/global.css");
+
+footer {
+
+width: 100%;
+bottom: 0px;
+position: absolute;
+background-color: white;
+background-color: var(--primary-theme-color);
+}
+
+
