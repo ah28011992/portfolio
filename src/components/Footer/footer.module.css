@@ -1,12 +1,51 @@
 @import url("/src/assets/styles/global.css");
 
 footer {
-
-width: 100%;
-bottom: 0px;
-position: absolute;
-background-color: white;
-background-color: var(--primary-theme-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--primary-accent-color);
+  display: flex;
+  align-items: center;
+  padding-left: 0.5em;
+  height: 100px;
 }
 
+.sitemap_container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin: 2px;
+}
 
+.sitemap_container ul li {
+  font-family: var(--font-regular);
+  list-style: none;
+  line-height: 1.6rem;
+  color: var(--primary-text-color-300);
+}
+
+.copyright_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-top: 65px;
+}
+
+.copyright_container p {
+  font-family: var(--font-regular);
+  color: var(--primary-text-color-300);
+}
+
+h4 {
+  font-family: var(--font-regular);
+  color: var(--primary-text-color-300);
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
