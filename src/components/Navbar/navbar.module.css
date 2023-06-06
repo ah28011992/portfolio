@@ -49,7 +49,7 @@ a:active {
   color: var(--primary-text-color-300);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .list {
     flex-direction: column;
     height: auto;

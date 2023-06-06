@@ -5,32 +5,30 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <section className={styles.sitemap_container}>
-        <div className={styles.sitemap_title}>
-          <h4>Site map</h4>
-        </div>
-        <ul>
-          <Link to='/'>
-            {" "}
-            <li className='sitemap_list'>Home</li>
-          </Link>
-          <Link to='/About'>
-            {" "}
-            <li className='sitemap_list'>About</li>
-          </Link>
-          <Link to='/Projects'>
-            {" "}
-            <li className='sitemap_list'>Projects</li>
-          </Link>
-          <Link to='/Contact'>
-            {" "}
-            <li className={styles.sitemap_list}>Contact</li>
-          </Link>
-        </ul>
+      <section className={styles.container}>
+        <section className={styles.footer_content}>
+          <ul>
+            <Link to='/'>
+              {" "}
+              <li className='sitemap_list'>Home</li>
+            </Link>
+            <Link to='/About'>
+              {" "}
+              <li className='sitemap_list'>About</li>
+            </Link>
+            <Link to='/Projects'>
+              {" "}
+              <li className='sitemap_list'>Projects</li>
+            </Link>
+            <Link to='/Contact'>
+              {" "}
+              <li className={styles.sitemap_list}>Contact</li>
+            </Link>
+          </ul>
+          <p>&copy; {currentYear} | Aaron Hedgecock</p>
+        </section>
       </section>
-      <section className={styles.copyright_container}>
-        <p>&copy; {currentYear} | Aaron Hedgecock</p>
-      </section>
+
       {/* <section className={styles.wave_container}>
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
           <path
