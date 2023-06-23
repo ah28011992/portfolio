@@ -1,0 +1,16 @@
+@import "../../assets/styles/global.css";
+
+.main_heading__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  margin: 0.5rem auto;
+  width: 100%;
+  color: var(--primary-text-color);
+}
+h1 {
+  font-family: var(--font-medium), sans-serif;
+  font-weight: var(--font-weight-medium);
+  font-size: 3.5rem;
+}

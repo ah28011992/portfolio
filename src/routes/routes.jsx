@@ -6,9 +6,9 @@ import Projects from "../pages/projects/projects.jsx";
 
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/about", element: <About /> },
-  { path: "/projects", element: <Projects /> },
-  { path: "/contact", element: <Contact /> },
+  { path: "/about", element: <About />, title:'About' },
+  { path: "/projects", element: <Projects />, title: 'Projects' },
+  { path: "/contact", element: <Contact />, title:'Contact' },
 ];
 
 export default routes;
