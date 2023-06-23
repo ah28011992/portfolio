@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap");
 
 :root {
-   
   --primary-theme-color: #2c001e;
   --primary-theme-color-400: #55003a;
   --primary-theme-color-300: #7e0056;
-  --primary-theme-color-300: #a60071;
+  --primary-theme-color-200: #a60071;
 
   --secondary-theme-color: #f1efea;
   --secondary-theme-color-dark-600: #dbd5c8;
@@ -19,7 +18,8 @@
   --secondary-text-color-400: #474747;
   --secondary-text-color-300: #5c5c5c;
 
-  --primary-accent-color: #e95420 ;
+  --primary-accent-color: #e95420;
+  --secondary-accent-color: #ffba08;
 
   --font-light: "Rajdhani", sans-serif;
   --font-regular: "Rajdhani", sans-serif;
@@ -57,4 +57,3 @@ body {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
 }
-

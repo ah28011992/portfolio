@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../assets/styles/global.css";
 import styles from "./navbar.module.css";
 import IconMenu from "../UI/Menu";
 import routes from "../../routes/routes";
