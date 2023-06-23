@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const project_page = () => {
   return (
-    <Header />
-  )
-}
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
+};
 
-export default project_page
+export default project_page;
