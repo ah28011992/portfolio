@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./MainContentTitle.module.css";
 import { useLocation } from "react-router-dom";
+import NotFound from "../../pages/error_handling/NotFound";
 
 const MainContentHeading = () => {
   const location = useLocation();
@@ -18,10 +19,12 @@ const MainContentHeading = () => {
     document.title = pageHeading;
   }, [pageHeading]);
 
-  return (
+  return pageHeading ? (
     <div className={styles.main_heading__container}>
       <h1>{pageHeading}</h1>
     </div>
+  ) : (
+    <NotFound />
   );
 };
 
